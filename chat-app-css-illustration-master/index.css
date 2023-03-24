@@ -7,11 +7,18 @@
     box-sizing: border-box;
     border: 1px red solid;
 }
+html{
+    height: 100%;
+}
 
 body{
     background-color: #f7f5fa;
     margin: 0;
     font-family: 'Rubik';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .content{
@@ -94,7 +101,59 @@ h1{
 }
 
 
-
-
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+@media (min-width: 1024px) {
+
+
+body{
+    flex-direction: row;
+}
+
+.content{
+    justify-content: right;
+    height: 80%;
+}
+
+.paraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.main__paraph{
+    width: 65%;
+    text-align: left;
+}
+
+.main__title{
+    width: 60%;
+    justify-content: flex-start;
+}
+
+.content{
+    margin: 0 auto;
+    position: relative;
+    top: 6rem;
+    left: 18rem;
+    display: block;
+}
+    
+.violet__item{
+    position: relative;
+    z-index: -1;
+    right:6%;
+    width: 450px;
+    height: 40rem;
+    background: linear-gradient(180deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+    border-bottom-right-radius: 200px;  
+    border-bottom-left-radius: 200px;  
+}
+
+    
+}
